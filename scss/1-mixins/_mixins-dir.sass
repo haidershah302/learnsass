@@ -23,6 +23,9 @@
         display: block
         text-transform: uppercase
         font-weight: bold
+        +mq(3000px, 1200px)
+            font-size: $base-font + 44
+            
     span.sub-title
         font-weight: normal
         margin-bottom: $mgb
@@ -42,3 +45,15 @@
       content: "";
       display: block
       clear: both
+
+
+=mq ( $arg... )
+    @if length($arg) == 1
+        @media screen and ( max-width: nth($arg, 1) )
+            @content
+
+    @if length($arg) == 2
+        @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2))
+            @content
+
+

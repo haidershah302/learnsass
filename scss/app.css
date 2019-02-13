@@ -35,6 +35,12 @@ li {
   float: left;
 }
 
+@media screen and (max-width: 600px) {
+  #main-nav li {
+    width: 100%;
+  }
+}
+
 #main-nav li a {
   padding: 16px;
   text-decoration: none;
@@ -73,6 +79,12 @@ li {
   font-weight: bold;
 }
 
+@media screen and (max-width: 3000px) and (min-width: 1200px) {
+  .lead-banner span {
+    font-size: 58px;
+  }
+}
+
 .lead-banner span.sub-title {
   font-weight: normal;
   margin-bottom: 30px;
@@ -104,6 +116,12 @@ li {
   font-weight: bold;
 }
 
+@media screen and (max-width: 3000px) and (min-width: 1200px) {
+  .lessons-banner span {
+    font-size: 58px;
+  }
+}
+
 .lessons-banner span.sub-title {
   font-weight: normal;
   margin-bottom: 30px;
@@ -128,10 +146,6 @@ li {
   text-align: center;
 }
 
-#services li:hover {
-  background-color: #d8dde8;
-}
-
 #services img {
   width: 60%;
   margin: 20px 20%;
@@ -144,7 +158,7 @@ li {
 }
 
 #services a:hover {
-  color: red;
+  color: #3e1203;
 }
 
 #services ul:after {

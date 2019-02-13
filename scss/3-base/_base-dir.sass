@@ -25,6 +25,8 @@ li
   li
     width: (100% / 6)
     float: left
+    +mq(600px)
+      width: 100%
 
     a
       padding: 16px
@@ -54,8 +56,6 @@ li
     float: left
     box-sizing: border-box
     text-align: center
-    &:hover
-      background-color: darken(#F8F9FB, 10%)
   
   img
     width: 60%
@@ -65,7 +65,7 @@ li
     color: black
     font-weight: bold
     &:hover
-      color: red
+      color: complement($bg-head)
   ul
     +clearfix
 
