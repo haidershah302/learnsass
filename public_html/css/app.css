@@ -1,7 +1,23 @@
+body {
+  background: royalblue;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: white;
+}
+
 .box {
-  background-color: yellow;
+  background-color: pink;
   width: 100px;
   height: 100px;
+  display: inline-block;
+  border-radius: 40%;
+  -webkit-box-shadow: 0 5px 10px pink;
+  box-shadow: 0 5px 10px pink;
 }
 
 /*# sourceMappingURL=app.css.map */
