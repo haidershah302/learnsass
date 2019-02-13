@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/2-base/_base.sass","../../sass/0-variables/_variables-dir.sass","../../sass/3-layouts/_container.sass","../../sass/4-modules/_box.sass","../../sass/_mixins.sass"],"names":[],"mappings":"AAAA;EACI,YCGG;;;ACJP;EACI;EACA;EACA;EACA;EACA;;;ACHJ;EACI,kBAHS;EAIT;EACA;EACA;ECFA,eDGM;ECDN","file":"app.css"}
