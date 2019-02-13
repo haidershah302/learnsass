@@ -12,26 +12,71 @@ body
   margin: 0
   padding: 0
 
+li
+  list-style: none
+
 // navs
-.wrapper
-  width: 90%
-  margin: 0 auto
+#main-nav
+  width: 100%
+  ul
+    width: 100%
+    +clearfix
+
   li
-    list-style: none
-    font-family: roboto
+    width: (100% / 6)
     float: left
+
     a
+      padding: 16px
       text-decoration: none
       color: $hdr-color
-      padding: 16px
-      display: inline-block
+      display: block
       text-align: center
-// end .wrapper
+      &:hover
+        background: lighten($bg-head, 6)
 
-#main-nav ul:after
-  content: ""
-  display: block
-  clear: both
 
 .lead-banner
-  =banner(40px, 12px, 30px)
+  +banner (50px, 40px, 12px, 30px, right)
+
+.lessons-banner
+  +banner (50px, 40px, 34px, 30px, left)
+  li
+    max-width: 500px
+    text-transform: uppercase
+
+#services
+  margin-bottom: 60px
+  width: 100%
+  background: #F8F9FB
+  li
+    width: (100% / 3)
+    float: left
+    box-sizing: border-box
+    text-align: center
+    &:hover
+      background-color: darken(#F8F9FB, 10%)
+  
+  img
+    width: 60%
+    margin: 20px 20%
+  a
+    text-decoration: none
+    color: black
+    font-weight: bold
+    &:hover
+      color: red
+  ul
+    +clearfix
+
+
+
+#projects
+  widows: 100%
+  padding: 0 20px
+  h1
+    margin-bottom: 5%
+  li
+    +grid(3 , 3%)
+    img
+      width: 100%
