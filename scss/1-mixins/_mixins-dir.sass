@@ -1,0 +1,21 @@
+// Header Mixins
+
+
++banner ($top, $fontadd, $mgb)
+    width: 100%
+    position: relative
+    color: white
+    img
+     width: 100%
+    .banner-content
+        position: absolute
+        top: $top
+        width: 100% 
+    span
+        font-size: $base-font + $fontadd
+        display: block
+        text-transform: uppercase
+        font-weight: bold
+    span.title
+        font-weight: normal
+        margin-bottom: $mgb
